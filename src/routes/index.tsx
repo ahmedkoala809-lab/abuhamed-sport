@@ -103,7 +103,9 @@ function Hero() {
 
 function Feature() {
   const a = ARTICLES[2];
+  if (!a) return null;
   return (
+
     <section className="edge py-20 md:py-28">
       <Reveal>
         <Link
