@@ -42,6 +42,12 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link to="/admin" className="text-sm text-signal/80 transition-colors hover:text-signal flex items-center gap-1.5">
+                  <span>لوحة الإدارة</span>
+                  <span className="text-[10px] bg-signal/15 px-1 rounded text-signal">CMS</span>
+                </Link>
+              </li>
             </ul>
           </nav>
 
@@ -85,6 +91,7 @@ export function Footer() {
       <div className="edge flex flex-col gap-3 border-t border-border py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
         <span>© ٢٠٢٦ أبو حمد. جميع الحقوق محفوظة.</span>
         <div className="flex gap-6">
+          <Link to="/admin" className="hover:text-signal">لوحة الإدارة</Link>
           <span>سياسة الخصوصية</span>
           <span>شروط الاستخدام</span>
         </div>

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, Search, X } from "lucide-react";
+import { Menu, Search, Shield, X } from "lucide-react";
 import { NAV } from "@/lib/content";
 import { SearchOverlay } from "./SearchOverlay";
 import { Wordmark } from "./Wordmark";
@@ -52,6 +52,14 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <Link
+              to="/admin"
+              aria-label="لوحة الإدارة"
+              title="لوحة الإدارة (CMS)"
+              className="grid h-10 w-10 place-items-center border border-border transition-colors hover:border-signal hover:text-signal"
+            >
+              <Shield className="h-4 w-4" />
+            </Link>
             <button
               onClick={() => setSearchOpen(true)}
               aria-label="بحث"
@@ -96,6 +104,16 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              to="/admin"
+              onClick={() => setMenuOpen(false)}
+              className="display border-b border-border py-5 text-4xl text-signal transition-colors hover:brightness-110 flex items-center justify-between"
+            >
+              <span>لوحة الإدارة</span>
+              <span className="eyebrow text-xs border border-signal/40 bg-signal/10 px-2 py-0.5 text-signal">
+                CMS
+              </span>
+            </Link>
           </nav>
         </div>
       )}

@@ -11,6 +11,12 @@
 ## Phase 3 — Matches / transfers / stories pages
 - [x] Match Center page, Transfers page, Stories page, About page
 
-## Phase 4+ — CMS (blocked: needs Lovable Cloud enabled + user go-ahead)
-- [ ] Auth + roles, articles/categories/matches/teams/players/transfers tables
-- [ ] Admin dashboard, media library, homepage builder, site settings
+## Phase 4+ — CMS & Admin Dashboard (Completed)
+- [x] Full Sports CMS & Admin Dashboard (/admin)
+- [x] Articles & news editorial manager (create, edit, delete, preview, categories)
+- [x] Match Center manager with live score real-time controls
+- [x] Transfers market tracker and rumors management
+- [x] Breaking news ticker controller
+- [x] Quick actions & editorial analytics overview
+- [x] LocalStorage persistence & Supabase server integration ready
+- [ ] Auth & multi-user roles (next iteration)
